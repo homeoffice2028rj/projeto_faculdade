@@ -1,0 +1,12 @@
+Estrutura final
+backend/
+│
+├── config/
+├── controllers/
+├── middlewares/
+├── models/
+├── routes/
+├── utils/
+├── node_modules/
+├── package.json
+└── server.js
