@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Cardápio | Sabor & Cia
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../public/css/cardapio.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            🍔 Sabor & Cia
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Início
+            </a>
+
+            <a href="#">
+                Cardápio
+            </a>
+
+            <a href="./pedidos.html">
+                Pedidos
+            </a>
+
+            <a href="./login.html">
+                Login
+            </a>
+
+        </nav>
+
+        <a
+            href="./carrinho.html"
+            class="btn-carrinho"
+        >
+            🛒 Carrinho
+        </a>
+
+    </header>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <h1>
+            Nosso Cardápio 🍔
+        </h1>
+
+        <p>
+
+            Escolha seus lanches favoritos
+            e peça agora mesmo.
+
+        </p>
+
+    </section>
+
+    <!-- =========================
+         BUSCA
+    ========================== -->
+
+    <section class="busca-container">
+
+        <input
+            type="text"
+            id="buscarProduto"
+            placeholder="Buscar produto..."
+        >
+
+    </section>
+
+    <!-- =========================
+         CATEGORIAS
+    ========================== -->
+
+    <section class="categorias">
+
+        <button class="categoria active">
+            Todos
+        </button>
+
+        <button class="categoria">
+            Hambúrguer
+        </button>
+
+        <button class="categoria">
+            Combos
+        </button>
+
+        <button class="categoria">
+            Bebidas
+        </button>
+
+    </section>
+
+    <!-- =========================
+         PRODUTOS
+    ========================== -->
+
+    <main>
+
+        <div
+            class="lista-produtos"
+            id="lista-produtos"
+        >
+
+            <!-- PRODUTO 1 -->
+
+            <div class="card-produto">
+
+                <img
+                    src="../public/images/burger1.jpg"
+                    alt="X-Burger"
+                >
+
+                <div class="info">
+
+                    <h3>
+                        X-Burger
+                    </h3>
+
+                    <p>
+
+                        Hambúrguer artesanal
+                        com cheddar e bacon.
+
+                    </p>
+
+                    <div class="preco">
+                        R$ 29,90
+                    </div>
+
+                    <button class="btn-comprar">
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUTO 2 -->
+
+            <div class="card-produto">
+
+                <img
+                    src="../public/images/burger2.jpg"
+                    alt="Combo Especial"
+                >
+
+                <div class="info">
+
+                    <h3>
+                        Combo Especial
+                    </h3>
+
+                    <p>
+
+                        Hambúrguer +
+                        batata +
+                        refrigerante.
+
+                    </p>
+
+                    <div class="preco">
+                        R$ 39,90
+                    </div>
+
+                    <button class="btn-comprar">
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUTO 3 -->
+
+            <div class="card-produto">
+
+                <img
+                    src="../public/images/burger3.jpg"
+                    alt="Chicken Burger"
+                >
+
+                <div class="info">
+
+                    <h3>
+                        Chicken Burger
+                    </h3>
+
+                    <p>
+
+                        Frango crocante
+                        com molho especial.
+
+                    </p>
+
+                    <div class="preco">
+                        R$ 27,90
+                    </div>
+
+                    <button class="btn-comprar">
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- =========================
+         PROMOÇÃO
+    ========================== -->
+
+    <section class="promocao">
+
+        <div class="promo-box">
+
+            <h2>
+                🔥 Promoção da Semana
+            </h2>
+
+            <p>
+
+                Combo Especial +
+                refrigerante grátis.
+
+            </p>
+
+            <a
+                href="./checkout.html"
+                class="btn-promo"
+            >
+                Pedir Agora
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+                🍔 Sabor & Cia
+            </h2>
+
+            <p>
+
+                Delivery rápido,
+                sabor inesquecível.
+
+            </p>
+
+            <div class="social">
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    WhatsApp
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="copy">
+
+            © 2026 Sabor & Cia
+            - Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         JS
+    ========================== -->
+
+    <script src="../public/js/produtos.js"></script>
+    <script src="../public/js/cardapio.js"></script>
+
+</body>
+
+</html>

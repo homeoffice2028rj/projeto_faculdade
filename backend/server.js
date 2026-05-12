@@ -1,66 +1,19 @@
-require("dotenv").config();
-
-const express =
-    require("express");
-
-const cors =
-    require("cors");
-
-const mongoose =
-    require("mongoose");
-
-
-// APP
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
-
-// MIDDLEWARES
-
 app.use(cors());
-
 app.use(express.json());
 
+const produtosRoutes = require("./routes/produtos");
 
-// ROTAS
+app.use("/produtos", produtosRoutes);
 
-const produtoRoutes =
-    require("./routes/produtoRoutes");
-
-
-app.use(
-   "/api/produtos",
-   produtoRoutes
-);
-
-
-// MONGODB
-
-mongoose.connect(
-   process.env.MONGO_URI
-)
-
-.then(() => {
-
-   console.log(
-      "MongoDB conectado"
-   );
-
-})
-
-.catch((err) => {
-
-   console.log(err);
-
+app.get("/", (req, res) => {
+    res.send("Servidor da Lanchonete funcionando!");
 });
 
-
-// SERVIDOR
-
 app.listen(3000, () => {
-
-   console.log(
-      "Servidor rodando"
-   );
-
+    console.log("Servidor rodando em http://localhost:3000");
 });

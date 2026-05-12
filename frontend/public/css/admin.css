@@ -1,0 +1,554 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background:#111111;
+    color:white;
+
+    display:flex;
+
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+    width:260px;
+
+    background:#1a1a1a;
+
+    padding:30px 20px;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+    bottom:0;
+
+    border-right:1px solid #2b2b2b;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+
+    color:#ff6600;
+
+    margin-bottom:50px;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.sidebar nav a{
+    color:#dcdcdc;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.sidebar nav a:hover{
+    background:#ff6600;
+    color:white;
+}
+
+.sidebar nav a.active{
+    background:#ff6600;
+    color:white;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+    flex:1;
+
+    margin-left:260px;
+
+    padding:40px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:40px;
+}
+
+.topbar h1{
+    font-size:38px;
+}
+
+.admin-info{
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+}
+
+.admin-info img{
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+/* =========================
+   CARDS DASHBOARD
+========================= */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:50px;
+}
+
+.card{
+    background:#1d1d1d;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    border:1px solid #ff6600;
+}
+
+.card h3{
+    color:#aaaaaa;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}
+
+.card h2{
+    font-size:34px;
+
+    color:#ff6600;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+/* =========================
+   BOTÃO ADICIONAR
+========================= */
+
+.btn-add{
+    background:#ff6600;
+    color:white;
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn-add:hover{
+    background:#e65c00;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#1d1d1d;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    margin-bottom:50px;
+}
+
+thead{
+    background:#222222;
+}
+
+thead th{
+    padding:18px;
+
+    text-align:left;
+
+    color:#ff6600;
+}
+
+tbody tr{
+    border-bottom:1px solid #2d2d2d;
+}
+
+tbody td{
+    padding:18px;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.ativo{
+    background:#1e8e3e;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:14px;
+}
+
+.inativo{
+    background:#d62828;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:14px;
+}
+
+.preparando{
+    color:#fcbf49;
+}
+
+.entrega{
+    color:#4cc9f0;
+}
+
+/* =========================
+   BOTÕES AÇÕES
+========================= */
+
+.editar{
+    background:#fcbf49;
+    color:black;
+
+    border:none;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:10px;
+
+    font-weight:bold;
+}
+
+.deletar{
+    background:#d62828;
+    color:white;
+
+    border:none;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+/* =========================
+   PEDIDOS
+========================= */
+
+.pedido-card{
+    background:#1d1d1d;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+}
+
+.pedido-card h3{
+    margin-bottom:10px;
+}
+
+.pedido-card p{
+    color:#cfcfcf;
+
+    margin-bottom:8px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal{
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:rgba(0,0,0,0.7);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.modal-content{
+    background:#1d1d1d;
+
+    width:500px;
+
+    max-width:90%;
+
+    padding:35px;
+
+    border-radius:18px;
+}
+
+.modal-content h2{
+    margin-bottom:25px;
+
+    color:#ff6600;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2a2a2a;
+
+    color:white;
+}
+
+.modal-content textarea{
+    resize:none;
+
+    height:120px;
+}
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.modal-buttons{
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+}
+
+.salvar{
+    background:#ff6600;
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.fechar{
+    background:#444444;
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast{
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    background:#ff6600;
+
+    color:white;
+
+    padding:16px 24px;
+
+    border-radius:10px;
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:0.3s;
+
+    z-index:99999;
+}
+
+.toast.show{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+    .sidebar{
+        width:100px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .sidebar nav a{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .main-content{
+        margin-left:100px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+
+        position:relative;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .main-content{
+        margin-left:0;
+    }
+
+    .topbar{
+        flex-direction:column;
+        gap:20px;
+        align-items:flex-start;
+    }
+
+    .section-title{
+        flex-direction:column;
+        gap:20px;
+        align-items:flex-start;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+}

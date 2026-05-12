@@ -1,0 +1,58 @@
+body {
+
+   font-family: Arial;
+
+   background: #f4f4f4;
+
+   display: flex;
+
+   justify-content: center;
+
+   align-items: center;
+
+   height: 100vh;
+}
+
+.container {
+
+   background: white;
+
+   padding: 40px;
+
+   border-radius: 12px;
+
+   width: 400px;
+}
+
+form {
+
+   display: flex;
+
+   flex-direction: column;
+
+   gap: 15px;
+}
+
+input {
+
+   padding: 12px;
+
+   border: 1px solid #ccc;
+
+   border-radius: 8px;
+}
+
+button {
+
+   padding: 12px;
+
+   border: none;
+
+   background: #ff6600;
+
+   color: white;
+
+   border-radius: 8px;
+
+   cursor: pointer;
+}
