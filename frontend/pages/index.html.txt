@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lanchonete Sabor & Cia</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link
+    rel="icon"
+    href="/public/images/favicon.ico"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+
+    <div class="logo-area">
+
+      <img
+        src="/public/images/logo.png"
+        alt="Logo"
+        class="logo"
+      >
+
+      <h1>Lanchonete Sabor & Cia</h1>
+
+    </div>
+
+    <nav class="menu">
+
+      <a href="/">Home</a>
+
+      <a href="/pages/cardapio.html">
+        Cardápio
+      </a>
+
+      <a href="/pages/carrinho.html">
+        Carrinho
+      </a>
+
+      <a href="/pages/pedidos.html">
+        Pedidos
+      </a>
+
+      <a href="/pages/login.html">
+        Login
+      </a>
+
+    </nav>
+
+  </header>
+
+  <!-- BANNER -->
+
+  <section class="banner">
+
+    <div class="banner-content">
+
+      <h2>
+        Os melhores hambúrgueres da cidade 🍔
+      </h2>
+
+      <p>
+        Delivery rápido, sabor incrível e ofertas
+        especiais todos os dias.
+      </p>
+
+      <button>
+        Fazer Pedido
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIAS -->
+
+  <section class="categorias">
+
+    <h2>Categorias</h2>
+
+    <div class="categorias-grid">
+
+      <div class="categoria-card">
+        🍔 Hambúrgueres
+      </div>
+
+      <div class="categoria-card">
+        🍟 Batatas
+      </div>
+
+      <div class="categoria-card">
+        🥤 Bebidas
+      </div>
+
+      <div class="categoria-card">
+        🍰 Sobremesas
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUTOS -->
+
+  <section class="produtos">
+
+    <h2>Mais vendidos</h2>
+
+    <div
+      class="produtos-grid"
+      id="lista-produtos"
+    >
+
+      <!-- Produtos carregados via JS -->
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
+
+  <section class="sobre">
+
+    <div class="sobre-texto">
+
+      <h2>Sobre Nós</h2>
+
+      <p>
+        A Lanchonete Sabor & Cia oferece os melhores
+        lanches artesanais da região, preparados com
+        ingredientes frescos e atendimento rápido.
+      </p>
+
+    </div>
+
+    <img
+      src="/public/images/loja.jpg"
+      alt="Loja"
+      class="sobre-imagem"
+    >
+
+  </section>
+
+  <!-- AVALIAÇÕES -->
+
+  <section class="avaliacoes">
+
+    <h2>Avaliações</h2>
+
+    <div class="avaliacoes-grid">
+
+      <div class="avaliacao-card">
+
+        <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+
+        <p>
+          Melhor hambúrguer que já comi!
+        </p>
+
+        <span>— Carlos</span>
+
+      </div>
+
+      <div class="avaliacao-card">
+
+        <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+
+        <p>
+          Entrega muito rápida.
+        </p>
+
+        <span>— Fernanda</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RODAPÉ -->
+
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div>
+
+        <h3>Lanchonete Sabor & Cia</h3>
+
+        <p>
+          Delivery funcionando todos os dias.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>Contato</h3>
+
+        <p>(21) 99999-9999</p>
+
+        <p>contato@saborecia.com</p>
+
+      </div>
+
+      <div>
+
+        <h3>Redes Sociais</h3>
+
+        <p>Instagram</p>
+
+        <p>Facebook</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
