@@ -1,0 +1,20 @@
+const produtos = [
+    {
+        id: 1,
+        nome: "X-Burger",
+        preco: 18
+    },
+    {
+        id: 2,
+        nome: "Batata Frita",
+        preco: 12
+    }
+];
+
+function listarProdutos(req, res) {
+    res.json(produtos);
+}
+
+module.exports = {
+    listarProdutos
+};

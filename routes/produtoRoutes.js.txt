@@ -1,0 +1,143 @@
+const express =
+require("express");
+
+const express =
+require("express");
+
+const router =
+express.Router();
+
+
+// TESTE API
+
+router.get("/", (req, res) => {
+
+   res.json({
+
+      mensagem:
+      "API produtos funcionando"
+
+   });
+
+});
+
+
+module.exports =
+router;
+
+const router =
+express.Router();
+
+
+// CONTROLLER
+
+const {
+
+   listarProdutos,
+
+   criarProduto,
+
+   editarProduto,
+
+   excluirProduto,
+
+   buscarProdutoPorId
+
+} = require(
+   "../controllers/produtoController"
+);
+
+
+// MIDDLEWARES
+
+const verificarToken =
+require(
+   "../middlewares/authMiddleware"
+);
+
+const verificarAdmin =
+require(
+   "../middlewares/adminMiddleware"
+);
+
+
+// LISTAR PRODUTOS
+
+router.get(
+   "/",
+   listarProdutos
+);
+
+
+// BUSCAR PRODUTO POR ID
+
+router.get(
+   "/:id",
+   buscarProdutoPorId
+);
+
+
+// CRIAR PRODUTO
+
+router.post(
+
+   "/",
+
+   verificarToken,
+
+   verificarAdmin,
+
+   criarProduto
+
+);
+
+
+// EDITAR PRODUTO
+
+router.put(
+
+   "/:id",
+
+   verificarToken,
+
+   verificarAdmin,
+
+   editarProduto
+
+);
+
+//UPLOAD PRODUTO
+const upload =
+require(
+   "../middlewares/upload"
+);
+
+//CRIAR IMAGEM DO PRODUTO
+router.post(
+
+   "/",
+
+   upload.single("imagem"),
+
+   criarProduto
+
+);
+
+
+// EXCLUIR PRODUTO
+
+router.delete(
+
+   "/:id",
+
+   verificarToken,
+
+   verificarAdmin,
+
+   excluirProduto
+
+);
+
+
+module.exports =
+router;

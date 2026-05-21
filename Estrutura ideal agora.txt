@@ -1,0 +1,42 @@
+lanchonete_sabor_e_cia/
+│
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env
+│   │
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── models/
+│   │   ├── Produto.js
+│   │   ├── Usuario.js
+│   │   └── Pedido.js
+│   │
+│   ├── controllers/
+│   │   ├── produtoController.js
+│   │   ├── usuarioController.js
+│   │   └── pedidoController.js
+│   │
+│   ├── routes/
+│   │   ├── produtoRoutes.js
+│   │   ├── usuarioRoutes.js
+│   │   └── pedidoRoutes.js
+│   │
+│   ├── middlewares/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── services/
+│   │   └── calculoPedido.js
+│   │
+│   └── utils/
+│       └── gerarToken.js
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   ├── js/
+│   └── assets/
+│
+└── README.md
